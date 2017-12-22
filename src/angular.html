@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<!-- <p ng-app=""> {{ 5 + 5 }} <p> -->
+
+<div ng-app="" ng-init="myCol = 'lightblue';firstname='pankaj';lastname='patel'">
+<p> Calculator <p>
+<p>Value1: <input type="text" ng-model="value1"><p>
+<p>Value2: <input type="text" ng-model="value2"><p>
+<p>
+<p> The sum is : {{ value1 + value2 }} <p>
+<h1>{{var1 }}</h1>
+<input style="background-color: {{ myCol}} " ng-model="myCol" value="{{myCol}}">
+<input style="background-color: {{ myCol}} " >
+<p> {{ firstname + " "  + lastname }} <p>
+
+</div>
+
+<p> next example<p>
+<div ng-app="" ng-init="person={ ">
+
+</div>
+</body>
+</html>

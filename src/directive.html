@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-app='myApp'>
+<directive-test></directive-test>
+<p> test - inside p tag <p>
+
+<p directive-test><p>
+<script>
+var app = angular.module('myApp',[]);
+app.directive('directiveTest',function(){
+	
+	return {
+		
+		restrict: "A",
+		template: "<h1>text message</h1>"
+	};
+});
+
+</script>
+</body>
+</html>
